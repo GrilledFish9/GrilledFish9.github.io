@@ -299,50 +299,14 @@
 
       
         
-          
-            <h1 id="算法C"><a href="#算法C" class="headerlink" title="算法C"></a>算法C</h1><h2 id="1、绪论"><a href="#1、绪论" class="headerlink" title="1、绪论"></a>1、绪论</h2><h3 id="算法的概念"><a href="#算法的概念" class="headerlink" title="算法的概念"></a>算法的概念</h3><p>算法(algorithm)是<strong>一系列解决问题的明确指令</strong>，也就是说，对于符合一定规范的输入，能够在有限时间内获得要求的输出。</p>
-<h3 id="算法的性质"><a href="#算法的性质" class="headerlink" title="算法的性质"></a>算法的性质</h3><p>①算法的每一个步骤都必须<strong>没有歧义</strong>，不能有半点儿含糊。</p>
-<p>②必须认真确定算法所处理的输入的<strong>值域</strong>。</p>
-<p>③同一算法可以用几种不同的形式来描述。</p>
-<p>④同一问题，可能存在几种不同的算法。</p>
-<p>⑤针对同一问题的算法可能基于完全不同的解题思路，而且解题速度也会有显著不同。</p>
-<h3 id="基本数据结构"><a href="#基本数据结构" class="headerlink" title="基本数据结构"></a>基本数据结构</h3><h4 id="数组（Array）"><a href="#数组（Array）" class="headerlink" title="数组（Array）"></a>数组（Array）</h4><p>n个相同数据类型的元素构成的序列，它们连续存储在计算机的存储器中，我们只要指定数组的下标（index）就能够访问这些元素。</p>
-<h4 id="链表（Linked-List）"><a href="#链表（Linked-List）" class="headerlink" title="链表（Linked List）"></a>链表（Linked List）</h4><p>是0个或多个称为节点（node）的元素构成的序列。</p>
-<p>每个节点包含两类信息：</p>
-<p>一类是数据；</p>
-<p>另一类是一个或多个称为指针（pointer）的链接，指向链表中其他元素（我们用一种称为null 的特殊指针表明某个节点没有后继元素）。</p>
-<h4 id="栈（Stack）"><a href="#栈（Stack）" class="headerlink" title="栈（Stack）"></a>栈（Stack）</h4><p>一种插入和删除操作都只能在端部进行的列表，这一端称为<strong>栈顶（top）</strong>，该结构按照一种<strong>“后进先出”（last-in-first-out，LIFO）</strong>的方式运转。</p>
-<h4 id="队列（Queue）"><a href="#队列（Queue）" class="headerlink" title="队列（Queue）"></a>队列（Queue）</h4><p>删除元素在列表的一头进行，这一头称为队头（front），这种删除操作称为出队（dequeue）</p>
-<p>插入元素在表的另一头进行，这一头称为队尾（rear），这种插入操作称为入队（enqueue）</p>
-<p>因此，队列是按照一种<strong>“先进先出”（first-in-first-out，FIFO）</strong>的方式运行。</p>
-<h4 id="图和树-p22-p28"><a href="#图和树-p22-p28" class="headerlink" title="图和树 p22-p28"></a>图和树 p22-p28</h4><p>太多了，自己去看</p>
-<h2 id="2、算法效率分析基础"><a href="#2、算法效率分析基础" class="headerlink" title="2、算法效率分析基础"></a>2、算法效率分析基础</h2><h3 id="最差效率（worst-case-efficiency）"><a href="#最差效率（worst-case-efficiency）" class="headerlink" title="最差效率（worst-case efficiency）"></a>最差效率（worst-case efficiency）</h3><p>当输入规模为n时算法在最坏情况下的效率。</p>
-<p>这时，相对于其他规模为n的输入，该算法的运行时间最长。</p>
-<h3 id="最优效率（best-case-efficiency）"><a href="#最优效率（best-case-efficiency）" class="headerlink" title="最优效率（best-case efficiency）"></a>最优效率（best-case efficiency）</h3><p>是指当输入规模为n时，算法在最优情况下的效率。</p>
-<p>这时，与其他规模为n的输入相比，该算法运行得最快。</p>
-<h3 id="平均效率（average-case-efficiency）"><a href="#平均效率（average-case-efficiency）" class="headerlink" title="平均效率（average-case efficiency）"></a>平均效率（average-case efficiency）</h3><p>无论是最差效率分析还是最优效率分析，都不能提供一种必要的信息。</p>
-<p>在“典型”或者“随机”输入的情况下，一个算法会具有什么样的行为。</p>
-<h2 id="3、蛮力法"><a href="#3、蛮力法" class="headerlink" title="3、蛮力法"></a>3、蛮力法</h2><h3 id="基于交换的排序"><a href="#基于交换的排序" class="headerlink" title="基于交换的排序"></a>基于交换的排序</h3><h4 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h4><p><img src="/2021/07/04/suanfa/1.png" alt="选择排序"></p>
-<p>时间复杂度为n^2</p>
-<h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><p><img src="/2021/07/04/suanfa/2.png" alt="冒泡排序"></p>
-<p>时间复杂度为n^2</p>
-<h4 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h4><p><img src="/2021/07/04/suanfa/3.png" alt="顺序查找"></p>
-<p>时间复杂度为n</p>
-<h4 id="穷举查找"><a href="#穷举查找" class="headerlink" title="穷举查找"></a>穷举查找</h4><p>穷举查找是一种简单的蛮力方法，它要求生成问题域中的每一个元素，选出其中满足问题约束的元素，然后再找出一个期望元素（例如，使目标函数达到最优的元素）。</p>
-<p><strong>旅行商问题、背包问题、分配问题 P89-P92</strong>（看书，东西有点点多，应该考不了多少）</p>
-<h2 id="4、减治法"><a href="#4、减治法" class="headerlink" title="4、减治法"></a>4、减治法</h2><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><p> <img src="/2021/07/04/suanfa/4.png" alt="插入排序"></p>
-<p>时间复杂度为n^2</p>
-<h3 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h3><p>在一个有向图中，对所有的节点进行排序，要求没有一个节点指向它前面的节点。</p>
-<p>先统计所有节点的入度，对于入度为0的节点就可以分离出来，然后把这个节点指向的节点的入度-1。</p>
-<p>一直做改操作，直到所有的节点都被分离出来。如果最后不存在入度为0的节点，那就说明有环，不存在拓扑排序，也就是很多题目的无解的情况。</p>
-<p>两种算法：P107-P109</p>
-<h3 id="折半查找"><a href="#折半查找" class="headerlink" title="折半查找"></a>折半查找</h3><p>对于有序数组的查找来说，折半查找是一种性能卓越的算法。</p>
-<p>它通过比较查找键K和数组中间元素A[m]来完成查找工作。如果它们相等，算法结束。</p>
-<p>否则，如果K&lt;A[m]，就对数组的前半部分执行该操作，如果K&gt;A[m]，则对数组的后半部分执行该操作。</p>
-<p><img src="/2021/07/04/suanfa/5.png" alt="折半查找"></p>
-<p>时间复杂度为log2^n</p>
-
-          
+          <h1 id="算法C"><a href="#算法C" class="headerlink" title="算法C"></a>算法C</h1><h2 id="1、绪论"><a href="#1、绪论" class="headerlink" title="1、绪论"></a>1、绪论</h2><h3 id="算法的概念"><a href="#算法的概念" class="headerlink" title="算法的概念"></a>算法的概念</h3><p>算法(algorithm)是<strong>一系列解决问题的明确指令</strong>，也就是说，对于符合一定规范的输入，能够在有限时间内获得要求的输出。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/07/04/suanfa/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
