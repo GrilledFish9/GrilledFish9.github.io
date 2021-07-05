@@ -87,6 +87,11 @@
 <meta property="og:site_name" content="技术宅拯救世界">
 <meta property="og:description" content="算法C0、小标题写页码的需要自己去看书，因为太多了……1、绪论算法的概念算法(algorithm)是一系列解决问题的明确指令，也就是说，对于符合一定规范的输入，能够在有限时间内获得要求的输出。">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/21.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/22.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/18.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/19.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/20.png">
 <meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/1.png">
 <meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/2.png">
 <meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/3.png">
@@ -104,11 +109,11 @@
 <meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/16.png">
 <meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/17.png">
 <meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/9.png">
-<meta property="og:updated_time" content="2021-07-05T08:53:29.006Z">
+<meta property="og:updated_time" content="2021-07-05T09:13:09.548Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法C复习大纲">
 <meta name="twitter:description" content="算法C0、小标题写页码的需要自己去看书，因为太多了……1、绪论算法的概念算法(algorithm)是一系列解决问题的明确指令，也就是说，对于符合一定规范的输入，能够在有限时间内获得要求的输出。">
-<meta name="twitter:image" content="http://yoursite.com/2021/07/04/suanfa/1.png">
+<meta name="twitter:image" content="http://yoursite.com/2021/07/04/suanfa/21.png">
 
 
 
@@ -336,7 +341,13 @@
 <p>插入元素在表的另一头进行，这一头称为队尾（rear），这种插入操作称为入队（enqueue）</p>
 <p>因此，队列是按照一种<strong>“先进先出”（first-in-first-out，FIFO）</strong>的方式运行。</p>
 <h4 id="图和树-p22-p28"><a href="#图和树-p22-p28" class="headerlink" title="图和树 p22-p28"></a>图和树 p22-p28</h4><p>太多了，自己去看</p>
-<h2 id="2、算法效率分析基础"><a href="#2、算法效率分析基础" class="headerlink" title="2、算法效率分析基础"></a>2、算法效率分析基础</h2><h3 id="最差效率（worst-case-efficiency）"><a href="#最差效率（worst-case-efficiency）" class="headerlink" title="最差效率（worst-case efficiency）"></a>最差效率（worst-case efficiency）</h3><p>当输入规模为n时算法在最坏情况下的效率。</p>
+<h2 id="2、算法效率分析基础"><a href="#2、算法效率分析基础" class="headerlink" title="2、算法效率分析基础"></a>2、算法效率分析基础</h2><p>符号：</p>
+<p><img src="/2021/07/04/suanfa/21.png" alt></p>
+<p><img src="/2021/07/04/suanfa/22.png" alt></p>
+<p><img src="/2021/07/04/suanfa/18.png" alt></p>
+<p><img src="/2021/07/04/suanfa/19.png" alt></p>
+<p><img src="/2021/07/04/suanfa/20.png" alt></p>
+<h3 id="最差效率（worst-case-efficiency）"><a href="#最差效率（worst-case-efficiency）" class="headerlink" title="最差效率（worst-case efficiency）"></a>最差效率（worst-case efficiency）</h3><p>当输入规模为n时算法在最坏情况下的效率。</p>
 <p>这时，相对于其他规模为n的输入，该算法的运行时间最长。</p>
 <h3 id="最优效率（best-case-efficiency）"><a href="#最优效率（best-case-efficiency）" class="headerlink" title="最优效率（best-case efficiency）"></a>最优效率（best-case efficiency）</h3><p>是指当输入规模为n时，算法在最优情况下的效率。</p>
 <p>这时，与其他规模为n的输入相比，该算法运行得最快。</p>
@@ -383,7 +394,7 @@
 <h3 id="问题化简"><a href="#问题化简" class="headerlink" title="问题化简"></a>问题化简</h3><p>问题化简提倡把一个给定的问题变换为另一个可以用已知算法求解的问题。</p>
 <p><img src="/2021/07/04/suanfa/12.png" alt></p>
 <h2 id="7、-时空权衡"><a href="#7、-时空权衡" class="headerlink" title="7、 时空权衡"></a>7、 时空权衡</h2><h3 id="计数排序"><a href="#计数排序" class="headerlink" title="计数排序"></a>计数排序</h3><h4 id="比较计数排序"><a href="#比较计数排序" class="headerlink" title="比较计数排序"></a>比较计数排序</h4><p>针对待排序列表中的每一个元素，算出列表中小于该元素的元素个数，并把结果记录在一张表中。这个“个数”指出了该元素在有序列表中的位置。</p>
-<p>也就是说，如果对于某些元素来说，这个数字是10，它应该排在有序数组第11个位置(如果我们从О开始计数，它的下标是10)上。</p>
+<p>也就是说，如果对于某些元素来说，这个数字是10，它应该排在有序数组第11个位置(如果我们从0开始计数，它的下标是10)上。</p>
 <p>因此，我们可以简单地把列表的元素复制到它在有序的新列表中的相应位置上，来对列表进行排序。这个算法称为<strong>比较计数排序</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">ComparisonCountingSort(A[0..n-1]//用比较计数法对数组排序</span><br><span class="line">//输入：可排序数组A[0..n-1]</span><br><span class="line">//输出：将A中元素按照升序排列的数组 S[0..n-1]</span><br><span class="line">for i&lt;-0 to n-l do   Count[i] &lt;-0</span><br><span class="line">for i&lt;-0 to n-2 do</span><br><span class="line">	for j&lt;-i+1 to n-1 do</span><br><span class="line">		if A[i]&lt;A[j]</span><br><span class="line">			Counr[j]&lt;-Count[j]+1</span><br><span class="line">		else Count[i]&lt;-Counr[i]+1</span><br><span class="line">for i&lt;-0 to n-1 do S[Count[i]]&lt;-A[i]</span><br><span class="line">return S</span><br></pre></td></tr></table></figure>
 <h4 id="分布计数"><a href="#分布计数" class="headerlink" title="分布计数"></a>分布计数</h4><p>让我们来考虑一种更现实的情况，即待排序的数组元素有一些其他信息和键相关联，这样一来，我们就不能改写列表的元素了。于是，我们可以把元素复制到一个新数组S[0..n-1]中。</p>
