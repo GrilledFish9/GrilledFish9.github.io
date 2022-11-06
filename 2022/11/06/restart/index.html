@@ -83,19 +83,19 @@
 <meta name="keywords" content="很难受啊">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Restart">
-<meta property="og:url" content="http://yoursite.com/2019/02/20/restart/index.html">
+<meta property="og:url" content="http://yoursite.com/2022/11/06/restart/index.html">
 <meta property="og:site_name" content="技术宅拯救世界">
 <meta property="og:description" content="在经历了千辛万苦后，终于我！！！！！重新启用了hexo！！！（此处应该有掌声）一直挡在我面前的一个恶心的困难就是npm的依赖问题，导致我无法安装npm。经过一上午的简短思考，发现问题出在node身上。从镜像源所获取的nodejs并不是最新的版本，我用node -version看了一下，是8.1.0版本。从ppa可获取的最新版本却是10.14.2,这就导致npm安装不上。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/02/20/restart/1.png">
-<meta property="og:image" content="http://yoursite.com/2019/02/20/restart/key.png">
-<meta property="og:image" content="http://yoursite.com/2019/02/20/restart/deploy.png">
-<meta property="og:image" content="http://yoursite.com/2019/02/20/restart/photo.png">
-<meta property="og:updated_time" content="2022-11-06T10:00:29.754Z">
+<meta property="og:image" content="http://yoursite.com/2022/11/06/restart/1.png">
+<meta property="og:image" content="http://yoursite.com/2022/11/06/restart/key.png">
+<meta property="og:image" content="http://yoursite.com/2022/11/06/restart/deploy.png">
+<meta property="og:image" content="http://yoursite.com/2022/11/06/restart/photo.png">
+<meta property="og:updated_time" content="2022-11-06T10:03:22.840Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Restart">
 <meta name="twitter:description" content="在经历了千辛万苦后，终于我！！！！！重新启用了hexo！！！（此处应该有掌声）一直挡在我面前的一个恶心的困难就是npm的依赖问题，导致我无法安装npm。经过一上午的简短思考，发现问题出在node身上。从镜像源所获取的nodejs并不是最新的版本，我用node -version看了一下，是8.1.0版本。从ppa可获取的最新版本却是10.14.2,这就导致npm安装不上。">
-<meta name="twitter:image" content="http://yoursite.com/2019/02/20/restart/1.png">
+<meta name="twitter:image" content="http://yoursite.com/2022/11/06/restart/1.png">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/20/restart/">
+  <link rel="canonical" href="http://yoursite.com/2022/11/06/restart/">
 
 
 
@@ -238,7 +238,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/20/restart/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/11/06/restart/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Grilled Fish">
@@ -267,8 +267,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-20T00:42:49+08:00">
-                2019-02-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-11-06T18:02:49+08:00">
+                2022-11-06
               </time>
             
 
@@ -305,10 +305,10 @@
       
 
       
-        <p>在经历了千辛万苦后，终于我！！！！！重新启用了hexo！！！（此处应该有掌声）<br>一直挡在我面前的一个恶心的困难就是npm的依赖问题，导致我无法安装npm。<br>经过一上午的简短思考，发现问题出在node身上。<br>从镜像源所获取的nodejs并不是最新的版本，我用node -version看了一下，是8.1.0版本。<br>从ppa可获取的最新版本却是10.14.2,这就导致npm安装不上。<br><a id="more"></a><br>于是，打开终端：<br>$ curl -sL <a href="https://deb.nodesource.com/setup_10.x" target="_blank" rel="noopener">https://deb.nodesource.com/setup_10.x</a> -o nodesource_setup.sh<br>$ sudo bash nodesource_setup.sh<br>$ sudo apt install nodejs<br>安装完成。<br>发现我的npm仍安装不上……（此时有一万个字的脏话飘过<br>为什么啊，明明是我先来的……（划掉<br>我抱着试一试的心态用npm -v看了一下<br>。。。。。。<br><img src="/2019/02/20/restart/1.png" alt="nmslNPM"></p>
-<p>woc原来已经装好了吗？<br>接下来就是喜闻乐见的hexo了<br>$ npm install hexo<br>$ hexo init grilledfish<br>$ hexo g<br>$ hexo s<br>………………………………<br>打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a><br>（感动的泪流了下来<br>（然而这里忘记截图了=_=<br>—————————————————————————————————————————————————————————————<br>接下来就是配置github<br>终端输入<br>$ git config –global user.name “这里改成github的用户名”<br>$ git config –global user.email “这里改成github的登录邮箱”<br>创建公钥<br>$ ssh-keygen -C ‘这里改成github的登录邮箱’ -t rsa<br>然后一直回车，直到出现这个：<br><img src="/2019/02/20/restart/key.png" alt="key"></p>
-<p>#这里我之前有生成key所以有个overwrite的确定<br>然后在你的用户目录下~/.ssh/id_rsa.pub，找到key就可以了。<br>复制，转到github，点击右上角头像，选择settings,然后选择new ssh key，添加key，title随便，下面把刚刚复制的key粘贴进去就完事，点击保存。<br>————————————————————————————————————————————————————————————<br>创建项目仓库<br>登录Github官网，点击右上角的+号，选择New repository。在页面输入github账户名.github.io。只能这么填，比如我的就是grilledfish.github.io，填完后点击Create repository。<br>————————————————————————————————————————————————————————————<br>部署<br>打开hexo目录下的_config.yml<br>$ sudo gedit _config.yml<br>到最底下，改成这样子：<br><img src="/2019/02/20/restart/deploy.png" alt="deploy"></p>
-<p>#注意每个冒号后面有空格<br>保存，回到终端，再装个插件才能push到github：<br>$ npm install hexo-deployer-git –save<br>最后hexo clean&amp;&amp;hexo g -d一下<br>到此为止就可以通过xxxxx.github.io来访问你的blog了。<br>————————————————————————————————————————————————————<br>在你的blog里插入图片<br>首先找到你blog的配置文件_config.yml<br>查找folder，找到post_asset_folder，设置为true<br>在hexo的根目录下打开终端，执行：<br>$ npm install hexo-asset-image –save<br>安装完成后，新建文章的时候就会发现在post目录下会有一个与文章同名的文件夹，在这个文件夹里面放入你要插入的图片。文章中用：<br><img src="/2019/02/20/restart/photo.png" alt="114514"><br>————————————————————————————————————————————————————<br>更换blog主题<br>我这里用常见的Next主题作为示例。<br>hexo根目录下打开终端，安装主题：<br>$ hexo clean<br>$ git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next<br>更新主题：<br>修改根目录的_config.yml文件，在theme属性上，将其landscape更改为next，保存退出。<br>$ hexo g -d</p>
+        <p>在经历了千辛万苦后，终于我！！！！！重新启用了hexo！！！（此处应该有掌声）<br>一直挡在我面前的一个恶心的困难就是npm的依赖问题，导致我无法安装npm。<br>经过一上午的简短思考，发现问题出在node身上。<br>从镜像源所获取的nodejs并不是最新的版本，我用node -version看了一下，是8.1.0版本。<br>从ppa可获取的最新版本却是10.14.2,这就导致npm安装不上。<br><a id="more"></a><br>于是，打开终端：<br>$ curl -sL <a href="https://deb.nodesource.com/setup_10.x" target="_blank" rel="noopener">https://deb.nodesource.com/setup_10.x</a> -o nodesource_setup.sh<br>$ sudo bash nodesource_setup.sh<br>$ sudo apt install nodejs<br>安装完成。<br>发现我的npm仍安装不上……（此时有一万个字的脏话飘过<br>为什么啊，明明是我先来的……（划掉<br>我抱着试一试的心态用npm -v看了一下<br>。。。。。。<br><img src="/2022/11/06/restart/1.png" alt="nmslNPM"></p>
+<p>woc原来已经装好了吗？<br>接下来就是喜闻乐见的hexo了<br>$ npm install hexo<br>$ hexo init grilledfish<br>$ hexo g<br>$ hexo s<br>………………………………<br>打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a><br>（感动的泪流了下来<br>（然而这里忘记截图了=_=<br>—————————————————————————————————————————————————————————————<br>接下来就是配置github<br>终端输入<br>$ git config –global user.name “这里改成github的用户名”<br>$ git config –global user.email “这里改成github的登录邮箱”<br>创建公钥<br>$ ssh-keygen -C ‘这里改成github的登录邮箱’ -t rsa<br>然后一直回车，直到出现这个：<br><img src="/2022/11/06/restart/key.png" alt="key"></p>
+<p>#这里我之前有生成key所以有个overwrite的确定<br>然后在你的用户目录下~/.ssh/id_rsa.pub，找到key就可以了。<br>复制，转到github，点击右上角头像，选择settings,然后选择new ssh key，添加key，title随便，下面把刚刚复制的key粘贴进去就完事，点击保存。<br>————————————————————————————————————————————————————————————<br>创建项目仓库<br>登录Github官网，点击右上角的+号，选择New repository。在页面输入github账户名.github.io。只能这么填，比如我的就是grilledfish.github.io，填完后点击Create repository。<br>————————————————————————————————————————————————————————————<br>部署<br>打开hexo目录下的_config.yml<br>$ sudo gedit _config.yml<br>到最底下，改成这样子：<br><img src="/2022/11/06/restart/deploy.png" alt="deploy"></p>
+<p>#注意每个冒号后面有空格<br>保存，回到终端，再装个插件才能push到github：<br>$ npm install hexo-deployer-git –save<br>最后hexo clean&amp;&amp;hexo g -d一下<br>到此为止就可以通过xxxxx.github.io来访问你的blog了。<br>————————————————————————————————————————————————————<br>在你的blog里插入图片<br>首先找到你blog的配置文件_config.yml<br>查找folder，找到post_asset_folder，设置为true<br>在hexo的根目录下打开终端，执行：<br>$ npm install hexo-asset-image –save<br>安装完成后，新建文章的时候就会发现在post目录下会有一个与文章同名的文件夹，在这个文件夹里面放入你要插入的图片。文章中用：<br><img src="/2022/11/06/restart/photo.png" alt="114514"><br>————————————————————————————————————————————————————<br>更换blog主题<br>我这里用常见的Next主题作为示例。<br>hexo根目录下打开终端，安装主题：<br>$ hexo clean<br>$ git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next<br>更新主题：<br>修改根目录的_config.yml文件，在theme属性上，将其landscape更改为next，保存退出。<br>$ hexo g -d</p>
 <p>——————————————————————————————————————————————————————<br>2022.11.6更新<br>久违没有更新一些东西了，来说说刚刚遇到的一些坑：<br>①hexo仍不支持nodejs16版本，需要降级使用nodejs12；<br>②nodejs降级一开始使用的是nvm来切换版本，但安装程序并没有自动添加环境变量；<br>③手动添加环境变量后，通过nvm list和nvm install 12.14.0以及nvm use 12.14.0后，发现hexo g时还是报错；<br>④手动node -v后，发现nodejs版本仍为16，搜索后得知Windows下的nvm就是一坨屎，还是得老老实实通过msi安装旧版本；<br>⑤安装nodejs 12后，hexo g还是报错：error：spawn failed，删除目录下.deploy-git依然报错；<br>⑥登录GitHub看了一眼公钥，发现没了，遂通过上面的配置GitHub的步骤重新生成ssh-key；<br>⑦保存到GitHub后，再次hexo g -d，于是就能blog上看到这一堆东西了。</p>
 
       
@@ -340,8 +340,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/20/helloword/" rel="next" title="helloword">
-                <i class="fa fa-chevron-left"></i> helloword
+              <a href="/2021/07/04/suanfa/" rel="next" title="算法C复习大纲">
+                <i class="fa fa-chevron-left"></i> 算法C复习大纲
               </a>
             
           </div>
@@ -349,10 +349,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/10/30/2019ctf/" rel="prev" title="南山杯CTF萌新赛WP">
-                南山杯CTF萌新赛WP <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
