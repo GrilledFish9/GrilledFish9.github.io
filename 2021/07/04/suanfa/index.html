@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32×32.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16×16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="背不完了,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="算法C0、小标题写页码的需要自己去看书，因为太多了……1、绪论算法的概念算法(algorithm)是一系列解决问题的明确指令，也就是说，对于符合一定规范的输入，能够在有限时间内获得要求的输出。">
+<meta name="keywords" content="背不完了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法C复习大纲">
+<meta property="og:url" content="http://yoursite.com/2021/07/04/suanfa/index.html">
+<meta property="og:site_name" content="技术宅拯救世界">
+<meta property="og:description" content="算法C0、小标题写页码的需要自己去看书，因为太多了……1、绪论算法的概念算法(algorithm)是一系列解决问题的明确指令，也就是说，对于符合一定规范的输入，能够在有限时间内获得要求的输出。">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/21.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/22.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/18.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/19.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/20.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/1.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/2.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/3.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/4.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/5.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/6.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/7.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/8.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/10.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/11.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/12.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/13.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/14.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/15.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/16.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/17.png">
+<meta property="og:image" content="http://yoursite.com/2021/07/04/suanfa/9.png">
+<meta property="og:updated_time" content="2021-07-06T01:07:43.210Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="算法C复习大纲">
+<meta name="twitter:description" content="算法C0、小标题写页码的需要自己去看书，因为太多了……1、绪论算法的概念算法(algorithm)是一系列解决问题的明确指令，也就是说，对于符合一定规范的输入，能够在有限时间内获得要求的输出。">
+<meta name="twitter:image" content="http://yoursite.com/2021/07/04/suanfa/21.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2021/07/04/suanfa/">
+
+
+
+
+
+  <title>算法C复习大纲 | 技术宅拯救世界</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">技术宅拯救世界</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">其实我菜得抠脚（逃</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/07/04/suanfa/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Grilled Fish">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术宅拯救世界">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">算法C复习大纲</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-07-04T22:27:18+08:00">
+                2021-07-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="算法C"><a href="#算法C" class="headerlink" title="算法C"></a>算法C</h1><h2 id="0、小标题写页码的需要自己去看书，因为太多了……"><a href="#0、小标题写页码的需要自己去看书，因为太多了……" class="headerlink" title="0、小标题写页码的需要自己去看书，因为太多了……"></a>0、小标题写页码的需要自己去看书，因为太多了……</h2><h2 id="1、绪论"><a href="#1、绪论" class="headerlink" title="1、绪论"></a>1、绪论</h2><h3 id="算法的概念"><a href="#算法的概念" class="headerlink" title="算法的概念"></a>算法的概念</h3><p>算法(algorithm)是<strong>一系列解决问题的明确指令</strong>，也就是说，对于符合一定规范的输入，能够在有限时间内获得要求的输出。</p>
+<a id="more"></a>
+<h3 id="算法的性质"><a href="#算法的性质" class="headerlink" title="算法的性质"></a>算法的性质</h3><p>输入、输出、确定性、有限性、可行性</p>
+<p>①算法的每一个步骤都必须<strong>没有歧义</strong>，不能有半点儿含糊。</p>
+<p>②必须认真确定算法所处理的输入的<strong>值域</strong>。</p>
+<p>③同一算法可以用几种不同的形式来描述。</p>
+<p>④同一问题，可能存在几种不同的算法。</p>
+<p>⑤针对同一问题的算法可能基于完全不同的解题思路，而且解题速度也会有显著不同。</p>
+<h3 id="基本数据结构"><a href="#基本数据结构" class="headerlink" title="基本数据结构"></a>基本数据结构</h3><h4 id="数组（Array）"><a href="#数组（Array）" class="headerlink" title="数组（Array）"></a>数组（Array）</h4><p>n个相同数据类型的元素构成的序列，它们连续存储在计算机的存储器中，我们只要指定数组的下标（index）就能够访问这些元素。</p>
+<h4 id="链表（Linked-List）"><a href="#链表（Linked-List）" class="headerlink" title="链表（Linked List）"></a>链表（Linked List）</h4><p>是0个或多个称为节点（node）的元素构成的序列。</p>
+<p>每个节点包含两类信息：</p>
+<p>一类是数据；</p>
+<p>另一类是一个或多个称为指针（pointer）的链接，指向链表中其他元素（我们用一种称为null 的特殊指针表明某个节点没有后继元素）。</p>
+<h4 id="栈（Stack）"><a href="#栈（Stack）" class="headerlink" title="栈（Stack）"></a>栈（Stack）</h4><p>一种插入和删除操作都只能在端部进行的列表，这一端称为<strong>栈顶（top）</strong>，该结构按照一种<strong>“后进先出”（last-in-first-out，LIFO）</strong>的方式运转。</p>
+<h4 id="队列（Queue）"><a href="#队列（Queue）" class="headerlink" title="队列（Queue）"></a>队列（Queue）</h4><p>删除元素在列表的一头进行，这一头称为队头（front），这种删除操作称为出队（dequeue）</p>
+<p>插入元素在表的另一头进行，这一头称为队尾（rear），这种插入操作称为入队（enqueue）</p>
+<p>因此，队列是按照一种<strong>“先进先出”（first-in-first-out，FIFO）</strong>的方式运行。</p>
+<h4 id="图和树-p22-p28"><a href="#图和树-p22-p28" class="headerlink" title="图和树 p22-p28"></a>图和树 p22-p28</h4><p>太多了，自己去看</p>
+<h2 id="2、算法效率分析基础"><a href="#2、算法效率分析基础" class="headerlink" title="2、算法效率分析基础"></a>2、算法效率分析基础</h2><p>符号：</p>
+<p><img src="/2021/07/04/suanfa/21.png" alt></p>
+<p><img src="/2021/07/04/suanfa/22.png" alt></p>
+<p><img src="/2021/07/04/suanfa/18.png" alt></p>
+<p><img src="/2021/07/04/suanfa/19.png" alt></p>
+<p><img src="/2021/07/04/suanfa/20.png" alt></p>
+<h3 id="最差效率（worst-case-efficiency）"><a href="#最差效率（worst-case-efficiency）" class="headerlink" title="最差效率（worst-case efficiency）"></a>最差效率（worst-case efficiency）</h3><p>当输入规模为n时算法在最坏情况下的效率。</p>
+<p>这时，相对于其他规模为n的输入，该算法的运行时间最长。</p>
+<h3 id="最优效率（best-case-efficiency）"><a href="#最优效率（best-case-efficiency）" class="headerlink" title="最优效率（best-case efficiency）"></a>最优效率（best-case efficiency）</h3><p>是指当输入规模为n时，算法在最优情况下的效率。</p>
+<p>这时，与其他规模为n的输入相比，该算法运行得最快。</p>
+<h3 id="平均效率（average-case-efficiency）"><a href="#平均效率（average-case-efficiency）" class="headerlink" title="平均效率（average-case efficiency）"></a>平均效率（average-case efficiency）</h3><p>无论是最差效率分析还是最优效率分析，都不能提供一种必要的信息。</p>
+<p>在“典型”或者“随机”输入的情况下，一个算法会具有什么样的行为。</p>
+<h2 id="3、蛮力法"><a href="#3、蛮力法" class="headerlink" title="3、蛮力法"></a>3、蛮力法</h2><p>是一种简单直接解决问题的方法，常常直接基于问题的描述和所涉及的概念定义。</p>
+<h3 id="基于交换的排序"><a href="#基于交换的排序" class="headerlink" title="基于交换的排序"></a>基于交换的排序</h3><h4 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h4><p><img src="/2021/07/04/suanfa/1.png" alt="选择排序"></p>
+<p>时间复杂度为n^2</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Python实现选择排序</span></span><br><span class="line">A = [<span class="number">64</span>, <span class="number">25</span>, <span class="number">12</span>, <span class="number">22</span>, <span class="number">11</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(A)):</span><br><span class="line">	min_idx = i</span><br><span class="line">	<span class="keyword">for</span> j <span class="keyword">in</span> range(i+<span class="number">1</span>, len(A)):</span><br><span class="line">		<span class="keyword">if</span> A[min_idx] &gt; A[j]:</span><br><span class="line">			min_idx = j</span><br><span class="line">	A[i], A[min_idx] = A[min_idx], A[i]</span><br><span class="line"></span><br><span class="line">print(<span class="string">"排序后的数组："</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(A)):</span><br><span class="line">	print(<span class="string">"&#123;&#125;"</span>.format(A[i]),end=<span class="string">" "</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><p><img src="/2021/07/04/suanfa/2.png" alt="冒泡排序"></p>
+<p>时间复杂度为n^2</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Python实现冒泡排序</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bubbleSort</span><span class="params">(arr)</span>:</span></span><br><span class="line">    n = len(arr)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>, n - i - <span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span> arr[j] &gt; arr[j + <span class="number">1</span>]:</span><br><span class="line">                arr[j], arr[j + <span class="number">1</span>] = arr[j + <span class="number">1</span>], arr[j]</span><br><span class="line">arr = [<span class="number">64</span>, <span class="number">34</span>, <span class="number">25</span>, <span class="number">12</span>, <span class="number">22</span>, <span class="number">11</span>, <span class="number">90</span>]</span><br><span class="line">bubbleSort(arr)</span><br><span class="line">print(<span class="string">"排序后的数组:"</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(arr)):</span><br><span class="line">    print(<span class="string">"&#123;&#125;"</span>.format(arr[i]),end=<span class="string">" "</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h4><p><img src="/2021/07/04/suanfa/3.png" alt="顺序查找"></p>
+<p>时间复杂度为n</p>
+<h4 id="穷举查找"><a href="#穷举查找" class="headerlink" title="穷举查找"></a>穷举查找</h4><p>穷举查找是一种简单的蛮力方法，它要求生成问题域中的每一个元素，选出其中满足问题约束的元素，然后再找出一个期望元素（例如，使目标函数达到最优的元素）。</p>
+<p><strong>旅行商问题、背包问题、分配问题 P89-P92</strong>（看书，东西有点点多，应该考不了多少）</p>
+<h2 id="4、减治法"><a href="#4、减治法" class="headerlink" title="4、减治法"></a>4、减治法</h2><p>利用一个问题给定实例的解和同样问题较小实例的解之间的某种关系。</p>
+<p>建立关系之后，即可以从顶至下（递归的），也可以从底至上（非递归的）运用此关系。</p>
+<h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><p> <img src="/2021/07/04/suanfa/4.png" alt="插入排序"></p>
+<p>时间复杂度为n^2</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insertionSort</span><span class="params">(arr)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(arr)):</span><br><span class="line">        key = arr[i]</span><br><span class="line">        j = i - <span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> j &gt;= <span class="number">0</span> <span class="keyword">and</span> key &lt; arr[j]:</span><br><span class="line">            arr[j + <span class="number">1</span>] = arr[j]</span><br><span class="line">            j -= <span class="number">1</span></span><br><span class="line">        arr[j + <span class="number">1</span>] = key</span><br><span class="line"></span><br><span class="line">arr = [<span class="number">12</span>, <span class="number">11</span>, <span class="number">13</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">insertionSort(arr)</span><br><span class="line">print(<span class="string">"排序后的数组:"</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(arr)):</span><br><span class="line">    print(<span class="string">"&#123;&#125;"</span>.format(arr[i]),end=<span class="string">" "</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h3><p>在一个有向图中，对所有的节点进行排序，要求没有一个节点指向它前面的节点。</p>
+<p>先统计所有节点的入度，对于入度为0的节点就可以分离出来，然后把这个节点指向的节点的入度-1。</p>
+<p>一直做改操作，直到所有的节点都被分离出来。如果最后不存在入度为0的节点，那就说明有环，不存在拓扑排序，也就是很多题目的无解的情况。</p>
+<p>两种算法：P107-P109</p>
+<h3 id="折半查找"><a href="#折半查找" class="headerlink" title="折半查找"></a>折半查找</h3><p>对于有序数组的查找来说，折半查找是一种性能卓越的算法。</p>
+<p>它通过比较查找键K和数组中间元素A[m]来完成查找工作。如果它们相等，算法结束。</p>
+<p>否则，如果K&lt;A[m]，就对数组的前半部分执行该操作，如果K&gt;A[m]，则对数组的后半部分执行该操作。</p>
+<p><img src="/2021/07/04/suanfa/5.png" alt="折半查找"></p>
+<p>时间复杂度为log2^n</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 返回x 在 arr 中的索引，如果不存在返回 -1</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">binarySearch</span><span class="params">(arr, l, r, x)</span>:</span></span><br><span class="line">    <span class="comment"># 基本判断</span></span><br><span class="line">    <span class="keyword">if</span> r &gt;= l:</span><br><span class="line">        mid = int(l + (r - l) / <span class="number">2</span>)</span><br><span class="line">        <span class="comment"># 元素整好的中间位置</span></span><br><span class="line">        <span class="keyword">if</span> arr[mid] == x:</span><br><span class="line">            <span class="keyword">return</span> mid</span><br><span class="line">            <span class="comment"># 元素小于中间位置的元素，只需要再比较左边的元素</span></span><br><span class="line">        <span class="keyword">elif</span> arr[mid] &gt; x:</span><br><span class="line">            <span class="keyword">return</span> binarySearch(arr, l, mid - <span class="number">1</span>, x)</span><br><span class="line">            <span class="comment"># 元素大于中间位置的元素，只需要再比较右边的元素</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> binarySearch(arr, mid + <span class="number">1</span>, r, x)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># 不存在</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line"><span class="comment"># 测试数组</span></span><br><span class="line">arr = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">10</span>, <span class="number">40</span>]</span><br><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="comment"># 函数调用</span></span><br><span class="line">result = binarySearch(arr, <span class="number">0</span>, len(arr) - <span class="number">1</span>, x)</span><br><span class="line"><span class="keyword">if</span> result != <span class="number">-1</span>:</span><br><span class="line">    print(<span class="string">"元素在数组中的索引为&#123;&#125;"</span>.format(result))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"元素不在数组中"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="5、分治法"><a href="#5、分治法" class="headerlink" title="5、分治法"></a>5、分治法</h2><p>将问题的实例划分成若干个较小的实例，对这些较小的实例递归求解，然后合并这些解，得到原始问题的解。</p>
+<h3 id="合并排序"><a href="#合并排序" class="headerlink" title="合并排序"></a>合并排序</h3><p>单个数组合并排序</p>
+<p><img src="/2021/07/04/suanfa/6.png" alt></p>
+<p>两个数组合并排序</p>
+<p><img src="/2021/07/04/suanfa/7.png" alt></p>
+<p>时间复杂度为nlogn</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge</span><span class="params">(arr, l, m, r)</span>:</span></span><br><span class="line">    n1 = m - l + <span class="number">1</span></span><br><span class="line">    n2 = r - m</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 创建临时数组</span></span><br><span class="line">    L = [<span class="number">0</span>] * (n1)</span><br><span class="line">    R = [<span class="number">0</span>] * (n2)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 拷贝数据到临时数组 arrays L[] 和 R[]</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, n1):</span><br><span class="line">        L[i] = arr[l + i]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>, n2):</span><br><span class="line">        R[j] = arr[m + <span class="number">1</span> + j]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 归并临时数组到 arr[l..r]</span></span><br><span class="line">    i = <span class="number">0</span>  <span class="comment"># 初始化第一个子数组的索引</span></span><br><span class="line">    j = <span class="number">0</span>  <span class="comment"># 初始化第二个子数组的索引</span></span><br><span class="line">    k = l  <span class="comment"># 初始归并子数组的索引</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> i &lt; n1 <span class="keyword">and</span> j &lt; n2:</span><br><span class="line">        <span class="keyword">if</span> L[i] &lt;= R[j]:</span><br><span class="line">            arr[k] = L[i]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            arr[k] = R[j]</span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 拷贝 L[] 的保留元素</span></span><br><span class="line">    <span class="keyword">while</span> i &lt; n1:</span><br><span class="line">        arr[k] = L[i]</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 拷贝 R[] 的保留元素</span></span><br><span class="line">    <span class="keyword">while</span> j &lt; n2:</span><br><span class="line">        arr[k] = R[j]</span><br><span class="line">        j += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mergeSort</span><span class="params">(arr, l, r)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> l &lt; r:</span><br><span class="line">        m = int((l + (r - <span class="number">1</span>)) / <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">        mergeSort(arr, l, m)</span><br><span class="line">        mergeSort(arr, m + <span class="number">1</span>, r)</span><br><span class="line">        merge(arr, l, m, r)</span><br><span class="line"></span><br><span class="line">arr = [<span class="number">12</span>, <span class="number">11</span>, <span class="number">13</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>]</span><br><span class="line">n = len(arr)</span><br><span class="line"></span><br><span class="line">mergeSort(arr, <span class="number">0</span>, n - <span class="number">1</span>)</span><br><span class="line">print(<span class="string">"排序后的数组"</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">    print(<span class="string">"&#123;&#125;"</span>.format(arr[i]),end=<span class="string">" "</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><p><img src="/2021/07/04/suanfa/8.png" alt></p>
+<p>时间复杂度为nlogn</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">partition</span><span class="params">(arr, low, high)</span>:</span></span><br><span class="line">    i = (low - <span class="number">1</span>)  <span class="comment"># 最小元素索引</span></span><br><span class="line">    pivot = arr[high]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(low, high):</span><br><span class="line">        <span class="comment"># 当前元素小于或等于 pivot</span></span><br><span class="line">        <span class="keyword">if</span> arr[j] &lt;= pivot:</span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">            arr[i], arr[j] = arr[j], arr[i]</span><br><span class="line"></span><br><span class="line">    arr[i + <span class="number">1</span>], arr[high] = arr[high], arr[i + <span class="number">1</span>]</span><br><span class="line">    <span class="keyword">return</span> (i + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># arr[] --&gt; 排序数组</span></span><br><span class="line"><span class="comment"># low  --&gt; 起始索引</span></span><br><span class="line"><span class="comment"># high  --&gt; 结束索引</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 快速排序函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quickSort</span><span class="params">(arr, low, high)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> low &lt; high:</span><br><span class="line">        pi = partition(arr, low, high)</span><br><span class="line">        quickSort(arr, low, pi - <span class="number">1</span>)</span><br><span class="line">        quickSort(arr, pi + <span class="number">1</span>, high)</span><br><span class="line">arr = [<span class="number">10</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">1</span>, <span class="number">5</span>]</span><br><span class="line">n = len(arr)</span><br><span class="line">quickSort(arr, <span class="number">0</span>, n - <span class="number">1</span>)</span><br><span class="line">print(<span class="string">"排序后的数组:"</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">    print(<span class="string">"&#123;&#125;"</span>.format(arr[i]),end=<span class="string">" "</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="二叉树遍历"><a href="#二叉树遍历" class="headerlink" title="二叉树遍历"></a>二叉树遍历</h3><p>把二叉树定义为<strong>若干节点</strong>的一个<strong>有限集合</strong>，它要么为空，要么由一个根和两棵称为TL和TR的不相交二叉树构成，这两棵二叉树分别为根的左右子树。我们常常认为二叉树是有序树的一种特例。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Height(T)</span><br><span class="line">//输出:T的高度</span><br><span class="line">//输入：一棵二叉树</span><br><span class="line">//输出：T的高度</span><br><span class="line">if T=Øreturn-1</span><br><span class="line">else return max&#123;Height(Tleft),Height(Tright)&#125;+l</span><br></pre></td></tr></table></figure>
+<p>二叉树的三种经典遍历算法：前序、中序和后序。</p>
+<h4 id="前序遍历（根左右）"><a href="#前序遍历（根左右）" class="headerlink" title="前序遍历（根左右）"></a>前序遍历（根左右）</h4><p>根在访问左右子树(就是这种先左后右的次序)之前被访问。</p>
+<h4 id="中序遍历（左根右）"><a href="#中序遍历（左根右）" class="headerlink" title="中序遍历（左根右）"></a>中序遍历（左根右）</h4><p>根在访问左子树后，但在访问右子树前被访问。</p>
+<h4 id="后序遍历（左右根）"><a href="#后序遍历（左右根）" class="headerlink" title="后序遍历（左右根）"></a>后序遍历（左右根）</h4><p>根在访问左右子树(就是这种先左后右的次序)之后被访问。</p>
+<p>例题：</p>
+<p><img src="/2021/07/04/suanfa/10.png" alt></p>
+<h3 id="大数乘法的原理-p145-p146"><a href="#大数乘法的原理-p145-p146" class="headerlink" title="大数乘法的原理 p145-p146"></a>大数乘法的原理 p145-p146</h3><p>n位数的乘法需要对n/2位数做三次乘法运算</p>
+<h3 id="Strassen矩阵乘法-p146-p148"><a href="#Strassen矩阵乘法-p146-p148" class="headerlink" title="Strassen矩阵乘法 p146-p148"></a>Strassen矩阵乘法 p146-p148</h3><p>计算两个2x2矩阵 A 和 B 的积 C 只需要进行 7 次乘法运算，而不是蛮力算法所需要的 8 次</p>
+<h2 id="6、变治法"><a href="#6、变治法" class="headerlink" title="6、变治法"></a>6、变治法</h2><p>是一组基于变换思想的技术，把问题变换成一种更容易解决的类型。</p>
+<h3 id="预排序-P156-P158"><a href="#预排序-P156-P158" class="headerlink" title="预排序 P156-P158"></a>预排序 P156-P158</h3><h4 id="为什么用预排序？"><a href="#为什么用预排序？" class="headerlink" title="为什么用预排序？"></a>为什么用预排序？</h4><p>效率更高</p>
+<h3 id="霍纳法则-P182-P184"><a href="#霍纳法则-P182-P184" class="headerlink" title="霍纳法则 P182-P184"></a>霍纳法则 P182-P184</h3><p><img src="/2021/07/04/suanfa/11.png" alt></p>
+<h3 id="问题化简"><a href="#问题化简" class="headerlink" title="问题化简"></a>问题化简</h3><p>问题化简提倡把一个给定的问题变换为另一个可以用已知算法求解的问题。</p>
+<p><img src="/2021/07/04/suanfa/12.png" alt></p>
+<h2 id="7、-时空权衡"><a href="#7、-时空权衡" class="headerlink" title="7、 时空权衡"></a>7、 时空权衡</h2><h3 id="计数排序"><a href="#计数排序" class="headerlink" title="计数排序"></a>计数排序</h3><h4 id="比较计数排序"><a href="#比较计数排序" class="headerlink" title="比较计数排序"></a>比较计数排序</h4><p>针对待排序列表中的每一个元素，算出列表中小于该元素的元素个数，并把结果记录在一张表中。这个“个数”指出了该元素在有序列表中的位置。</p>
+<p>也就是说，如果对于某些元素来说，这个数字是10，它应该排在有序数组第11个位置(如果我们从0开始计数，它的下标是10)上。</p>
+<p>因此，我们可以简单地把列表的元素复制到它在有序的新列表中的相应位置上，来对列表进行排序。这个算法称为<strong>比较计数排序</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">ComparisonCountingSort(A[0..n-1]//用比较计数法对数组排序</span><br><span class="line">//输入：可排序数组A[0..n-1]</span><br><span class="line">//输出：将A中元素按照升序排列的数组 S[0..n-1]</span><br><span class="line">for i&lt;-0 to n-l do   Count[i] &lt;-0</span><br><span class="line">for i&lt;-0 to n-2 do</span><br><span class="line">	for j&lt;-i+1 to n-1 do</span><br><span class="line">		if A[i]&lt;A[j]</span><br><span class="line">			Counr[j]&lt;-Count[j]+1</span><br><span class="line">		else Count[i]&lt;-Counr[i]+1</span><br><span class="line">for i&lt;-0 to n-1 do S[Count[i]]&lt;-A[i]</span><br><span class="line">return S</span><br></pre></td></tr></table></figure>
+<h4 id="分布计数"><a href="#分布计数" class="headerlink" title="分布计数"></a>分布计数</h4><p>让我们来考虑一种更现实的情况，即待排序的数组元素有一些其他信息和键相关联，这样一来，我们就不能改写列表的元素了。于是，我们可以把元素复制到一个新数组S[0..n-1]中。</p>
+<p>A中元素的值如果等于最小的值l，就被复制到S的前F[0]个元素中，也就是，位置0到F[0]-1，值等于l+1的元素被复制到位置F[0]至位置(F[0]+F[1])-1，以此类推。</p>
+<p>因为这种频率的累积和在统计中称为分布，这个方法本身也称作<strong>分布计数</strong>。</p>
+<p><img src="/2021/07/04/suanfa/13.png" alt></p>
+<h3 id="horspool方法"><a href="#horspool方法" class="headerlink" title="horspool方法"></a>horspool方法</h3><p>第一步：对于给定的长度为m的模式和在模式及文本中用到的字母表，按照上面的描述构造移动表。</p>
+<p>第二步：将模式与文本的开始处对齐。</p>
+<p>第三步：重复下面的过程，直到发现了一个匹配子串或者模式到达了文本的最后一个字符以外。从模式的最后一个字符开始，比较模式和文本中的相应字符，直到：</p>
+<p>要么所有m个字符都匹配（然后停止），要么遇到了一对不匹配的字符。</p>
+<p>在后一种情况下，如果c是当前文本中和模式的最后一个字符相对齐的字符，从移动表的第c列中取出单元格t(c)的值，然后将模式沿着文本向右移动t(c)个字符的距离。</p>
+<p><img src="/2021/07/04/suanfa/14.png" alt></p>
+<h2 id="8、动态规划（重要）"><a href="#8、动态规划（重要）" class="headerlink" title="8、动态规划（重要）"></a>8、动态规划（重要）</h2><p><strong>真不知道咋写，自己去看书吧，或者结合下面的链接看看</strong></p>
+<h4 id="warshall算法"><a href="#warshall算法" class="headerlink" title="warshall算法"></a>warshall算法</h4><p> p235 <a href="https://blog.csdn.net/foreverzili/article/details/68481930" target="_blank" rel="noopener">链接</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Warshall(A[1..n,1..n])</span><br><span class="line">//实现计算传递闭包的Warshall算法</span><br><span class="line">//输入：包括n个顶点有向图的邻接矩阵A</span><br><span class="line">//输出：该有向图的传递闭包</span><br><span class="line">R^(0) &lt;- A</span><br><span class="line">for k &lt;- 1 to n do</span><br><span class="line">	for i &lt;- 1 to n do</span><br><span class="line">		for j &lt;- 1 to n do</span><br><span class="line">            R^(k)[i,j]&lt;-R^k-1[i,j] or R^(k-1)[i,k] and R^(k-1)[k,j]</span><br><span class="line">	return R^(n)</span><br></pre></td></tr></table></figure>
+<h4 id="floyd算法-n对n的最短路径"><a href="#floyd算法-n对n的最短路径" class="headerlink" title="floyd算法(n对n的最短路径)"></a>floyd算法(n对n的最短路径)</h4><p>解决给定的<strong>加权图</strong>中顶点间的<strong>最短路径</strong>的一种算法，可以正确处理有向图或负权的最短路径问题，同时也被用于计算有向图的<strong>传递闭包</strong>。</p>
+<p>根据加权图初始化邻接矩阵，确定某一点，一步步寻找最短路径。</p>
+<p>p238 <a href="https://blog.csdn.net/ytuyzh/article/details/88617987" target="_blank" rel="noopener">链接</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Floyd (1..n,1..n])</span><br><span class="line">//实现计算完全最短路径的Floyd算法</span><br><span class="line">//输入：不包含长度为负的回路的图的权重矩阵W</span><br><span class="line">//输出：包含最短路径长度的距离矩阵</span><br><span class="line">D&lt;-W  //如果可以改写W，这一步可以省略</span><br><span class="line">for k &lt;- 1 to n do</span><br><span class="line">for i &lt;- 1 to n do</span><br><span class="line">	for j &lt;- 1 to n do</span><br><span class="line">		D[i,j]&lt;-min&#123;D[i,j],D[i,k]+D[k,j]&#125;</span><br><span class="line">return D</span><br></pre></td></tr></table></figure>
+<h4 id="最优二叉查找树"><a href="#最优二叉查找树" class="headerlink" title="最优二叉查找树"></a>最优二叉查找树</h4><p> p230 <a href="https://blog.csdn.net/sunshine_lyn/article/details/82792697" target="_blank" rel="noopener">链接</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">OptimalBST(P[1..n])</span><br><span class="line">//用动态规划算法求最优二叉查找树</span><br><span class="line">//输入：一个n个键的有序列表的查找概率数组P[1..n]</span><br><span class="line">//输出：在最优BST中成功查找的平均比较次数，以及最优BST中子树的根表R</span><br><span class="line">for i &lt;- 1 to n do</span><br><span class="line">	C[i, i-1]&lt;0</span><br><span class="line">	C[i,i] &lt;- P[i]</span><br><span class="line">	R[i,i] &lt;- i</span><br><span class="line">C[n+l,n] &lt;- 0</span><br><span class="line">for d &lt;- 1 to n-l do //对角线计数</span><br><span class="line">	for i &lt;- 1 to n-d do</span><br><span class="line">		j &lt;- i+d</span><br><span class="line">		minval &lt;- ∞</span><br><span class="line">		for k &lt;- i to j do</span><br><span class="line">			if C[i,k-1]+C[k+1,j] &lt; minval</span><br><span class="line">				minval &lt;- C[i,k-1]+C[k+1,j];kmin &lt;- k</span><br><span class="line">		R[i,j] &lt;- kmin</span><br><span class="line">		sum &lt;- P[i]; for s &lt;- i+1 to j do sum &lt;- sum+P[s]</span><br><span class="line">		C[i,j] &lt;- minval + sum</span><br><span class="line">return C[1,n],R</span><br></pre></td></tr></table></figure>
+<h2 id="9、贪婪技术（重要）"><a href="#9、贪婪技术（重要）" class="headerlink" title="9、贪婪技术（重要）"></a>9、贪婪技术（重要）</h2><p>通过一系列步骤来构造问题的解，每一步目前构造的部分做一次扩展，直到获得问题的完整解，核心是每一步选择都必须满足可行，局部最优和不可取消原则。</p>
+<h4 id="Prim算法（求最小生成树）找点"><a href="#Prim算法（求最小生成树）找点" class="headerlink" title="Prim算法（求最小生成树）找点"></a>Prim算法（求最小生成树）找点</h4><p>它是从点的方面考虑构建一颗MST，大致思想是：设图G顶点集合为U，首先任意选择图G中的<strong>一点</strong>作为<strong>起始点a</strong>，将该点加入集合V，再从集合U-V中找到<strong>另一点b</strong>使得点b到V中任意一点的<strong>权值最小</strong>，此时将b点也加入集合V；以此类推，现在的集合V={a，b}，再从集合U-V中找到另一点c使得点c到V中任意一点的权值最小，此时将c点加入集合V，直至所有顶点全部被加入V，此时就构建出了一棵最小生成树。</p>
+<p>P245 <a href="https://blog.csdn.net/yeruby/article/details/38615045" target="_blank" rel="noopener">链接</a></p>
+<p><img src="/2021/07/04/suanfa/15.png" alt></p>
+<h4 id="Kruskal算法（求最小生成树）找边"><a href="#Kruskal算法（求最小生成树）找边" class="headerlink" title="Kruskal算法（求最小生成树）找边"></a>Kruskal算法（求最小生成树）找边</h4><p>首先，将每个顶点放入其自身的数据集合中。然后，按照权值的升序来<strong>选择边</strong>。当选择每条边时，判断定义边的顶点是否在不同的数据集中。如果是，将此边插入最小生成树的集合中，同时，将集合中包含每个顶点的联合体取出，如果不是，就移动到下一条边。重复这个过程直到所有的边都探查过。</p>
+<p>P250 <a href="https://blog.csdn.net/gettogetto/article/details/53216951" target="_blank" rel="noopener">链接</a></p>
+<p><img src="/2021/07/04/suanfa/16.png" alt></p>
+<h4 id="Dijkstra算法（求1到n的最短路径）"><a href="#Dijkstra算法（求1到n的最短路径）" class="headerlink" title="Dijkstra算法（求1到n的最短路径）"></a>Dijkstra算法（求1到n的最短路径）</h4><p>Dijkstra算法采用的是一种贪心的策略，声明一个数组dis来保存源点到各个顶点的最短距离和一个保存已经找到了最短路径的顶点的集合：T。</p>
+<p>初始时，原点 s 的路径权重被赋为 0 （dis[s] = 0）。若对于顶点 s 存在能直接到达的边（s,m），则把dis[m]设为w（s, m）,同时把所有其他（s不能直接到达的）顶点的路径长度设为无穷大。初始时，集合T只有顶点s。<br>然后，从dis数组选择最小值，则该值就是源点s到该值对应的顶点的最短路径，并且把该点加入到T中，此时完成一个顶点。</p>
+<p>然后，我们需要看看新加入的顶点是否可以到达其他顶点并且看看通过该顶点到达其他点的路径长度是否比源点直接到达短，如果是，那么就替换这些顶点在dis中的值。</p>
+<p>然后，又从dis中找出最小值，重复上述动作，直到T中包含了图的所有顶点。</p>
+<p>P256 <a href="https://blog.csdn.net/qq_35644234/article/details/60870719" target="_blank" rel="noopener">链接</a></p>
+<p><img src="/2021/07/04/suanfa/17.png" alt></p>
+<h4 id="哈夫曼树"><a href="#哈夫曼树" class="headerlink" title="哈夫曼树"></a>哈夫曼树</h4><p>找出存放一串字符所需的<strong>最少</strong>的二进制编码</p>
+<p>P260 <a href="https://blog.csdn.net/qq_29519041/article/details/81428934" target="_blank" rel="noopener">链接</a></p>
+<h2 id="10、算法能力的极限"><a href="#10、算法能力的极限" class="headerlink" title="10、算法能力的极限"></a>10、算法能力的极限</h2><h3 id="P、NP和NPC问题的概念"><a href="#P、NP和NPC问题的概念" class="headerlink" title="P、NP和NPC问题的概念"></a>P、NP和NPC问题的概念</h3><p>P是能够用（确定性的）算法在多项式的时间内求解的判定问题。</p>
+<p>NP是一类可以用<strong>不确定多项式</strong>算法求解的判定问题。</p>
+<p>NPC问题：NP中所有其他问题可以在多项式时间内转化为这种问题。</p>
+<h3 id="相互关系"><a href="#相互关系" class="headerlink" title="相互关系"></a>相互关系</h3><p>P类问题是NP问题的子集，因为存在多项式时间解法的问题，总能在多项式时间内验证他。</p>
+<p>NPC问题是NP问题的子集。</p>
+<p>为什么用这些方法？各方法基于问题的属性</p>
+<p>对8、9的folyd算法、dijkstra算法、prim算法、kruskal算法的原理、优缺点、伪代码重点考察</p>
+<h2 id="PS：各个排序的复杂度"><a href="#PS：各个排序的复杂度" class="headerlink" title="PS：各个排序的复杂度"></a>PS：各个排序的复杂度</h2><p><img src="/2021/07/04/suanfa/9.png" alt></p>
+<p>来自<a href="https://zhuanlan.zhihu.com/p/42541704" target="_blank" rel="noopener">知乎</a>@sugarTang</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/背不完了/" rel="tag"># 背不完了</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/07/04/zhongwai/" rel="next" title="中外影视史复习大纲">
+                <i class="fa fa-chevron-left"></i> 中外影视史复习大纲
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MDU3NS8xNzEwMg=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/1.jpg" alt="Grilled Fish">
+            
+              <p class="site-author-name" itemprop="name">Grilled Fish</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#算法C"><span class="nav-number">1.</span> <span class="nav-text">算法C</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0、小标题写页码的需要自己去看书，因为太多了……"><span class="nav-number">1.1.</span> <span class="nav-text">0、小标题写页码的需要自己去看书，因为太多了……</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1、绪论"><span class="nav-number">1.2.</span> <span class="nav-text">1、绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#算法的概念"><span class="nav-number">1.2.1.</span> <span class="nav-text">算法的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法的性质"><span class="nav-number">1.2.2.</span> <span class="nav-text">算法的性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据结构"><span class="nav-number">1.2.3.</span> <span class="nav-text">基本数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数组（Array）"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">数组（Array）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#链表（Linked-List）"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">链表（Linked List）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#栈（Stack）"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">栈（Stack）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#队列（Queue）"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">队列（Queue）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图和树-p22-p28"><span class="nav-number">1.2.3.5.</span> <span class="nav-text">图和树 p22-p28</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、算法效率分析基础"><span class="nav-number">1.3.</span> <span class="nav-text">2、算法效率分析基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最差效率（worst-case-efficiency）"><span class="nav-number">1.3.1.</span> <span class="nav-text">最差效率（worst-case efficiency）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最优效率（best-case-efficiency）"><span class="nav-number">1.3.2.</span> <span class="nav-text">最优效率（best-case efficiency）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#平均效率（average-case-efficiency）"><span class="nav-number">1.3.3.</span> <span class="nav-text">平均效率（average-case efficiency）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、蛮力法"><span class="nav-number">1.4.</span> <span class="nav-text">3、蛮力法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基于交换的排序"><span class="nav-number">1.4.1.</span> <span class="nav-text">基于交换的排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#选择排序"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#冒泡排序"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#顺序查找"><span class="nav-number">1.4.1.3.</span> <span class="nav-text">顺序查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#穷举查找"><span class="nav-number">1.4.1.4.</span> <span class="nav-text">穷举查找</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、减治法"><span class="nav-number">1.5.</span> <span class="nav-text">4、减治法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#插入排序"><span class="nav-number">1.5.1.</span> <span class="nav-text">插入排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拓扑排序"><span class="nav-number">1.5.2.</span> <span class="nav-text">拓扑排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#折半查找"><span class="nav-number">1.5.3.</span> <span class="nav-text">折半查找</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、分治法"><span class="nav-number">1.6.</span> <span class="nav-text">5、分治法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#合并排序"><span class="nav-number">1.6.1.</span> <span class="nav-text">合并排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速排序"><span class="nav-number">1.6.2.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二叉树遍历"><span class="nav-number">1.6.3.</span> <span class="nav-text">二叉树遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前序遍历（根左右）"><span class="nav-number">1.6.3.1.</span> <span class="nav-text">前序遍历（根左右）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中序遍历（左根右）"><span class="nav-number">1.6.3.2.</span> <span class="nav-text">中序遍历（左根右）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#后序遍历（左右根）"><span class="nav-number">1.6.3.3.</span> <span class="nav-text">后序遍历（左右根）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大数乘法的原理-p145-p146"><span class="nav-number">1.6.4.</span> <span class="nav-text">大数乘法的原理 p145-p146</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Strassen矩阵乘法-p146-p148"><span class="nav-number">1.6.5.</span> <span class="nav-text">Strassen矩阵乘法 p146-p148</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、变治法"><span class="nav-number">1.7.</span> <span class="nav-text">6、变治法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#预排序-P156-P158"><span class="nav-number">1.7.1.</span> <span class="nav-text">预排序 P156-P158</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么用预排序？"><span class="nav-number">1.7.1.1.</span> <span class="nav-text">为什么用预排序？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#霍纳法则-P182-P184"><span class="nav-number">1.7.2.</span> <span class="nav-text">霍纳法则 P182-P184</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题化简"><span class="nav-number">1.7.3.</span> <span class="nav-text">问题化简</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、-时空权衡"><span class="nav-number">1.8.</span> <span class="nav-text">7、 时空权衡</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#计数排序"><span class="nav-number">1.8.1.</span> <span class="nav-text">计数排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#比较计数排序"><span class="nav-number">1.8.1.1.</span> <span class="nav-text">比较计数排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分布计数"><span class="nav-number">1.8.1.2.</span> <span class="nav-text">分布计数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#horspool方法"><span class="nav-number">1.8.2.</span> <span class="nav-text">horspool方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、动态规划（重要）"><span class="nav-number">1.9.</span> <span class="nav-text">8、动态规划（重要）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#warshall算法"><span class="nav-number">1.9.0.1.</span> <span class="nav-text">warshall算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#floyd算法-n对n的最短路径"><span class="nav-number">1.9.0.2.</span> <span class="nav-text">floyd算法(n对n的最短路径)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最优二叉查找树"><span class="nav-number">1.9.0.3.</span> <span class="nav-text">最优二叉查找树</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9、贪婪技术（重要）"><span class="nav-number">1.10.</span> <span class="nav-text">9、贪婪技术（重要）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Prim算法（求最小生成树）找点"><span class="nav-number">1.10.0.1.</span> <span class="nav-text">Prim算法（求最小生成树）找点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Kruskal算法（求最小生成树）找边"><span class="nav-number">1.10.0.2.</span> <span class="nav-text">Kruskal算法（求最小生成树）找边</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Dijkstra算法（求1到n的最短路径）"><span class="nav-number">1.10.0.3.</span> <span class="nav-text">Dijkstra算法（求1到n的最短路径）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#哈夫曼树"><span class="nav-number">1.10.0.4.</span> <span class="nav-text">哈夫曼树</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#10、算法能力的极限"><span class="nav-number">1.11.</span> <span class="nav-text">10、算法能力的极限</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#P、NP和NPC问题的概念"><span class="nav-number">1.11.1.</span> <span class="nav-text">P、NP和NPC问题的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相互关系"><span class="nav-number">1.11.2.</span> <span class="nav-text">相互关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PS：各个排序的复杂度"><span class="nav-number">1.12.</span> <span class="nav-text">PS：各个排序的复杂度</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Grilled Fish</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
