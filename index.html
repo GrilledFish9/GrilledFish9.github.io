@@ -299,7 +299,7 @@
 
       
         
-          <p>在经历了千辛万苦后，终于我！！！！！重新启用了hexo！！！（此处应该有掌声）<br>一直挡在我面前的一个恶心的困难就是npm的依赖问题，导致我无法安装npm。<br>经过一上午的简短思考，发现问题出在node身上。<br>从镜像源所获取的nodejs并不是最新的版本，我用node -version看了一下，是8.1.0版本。<br>从ppa可获取的最新版本却是10.14.2,这就导致npm安装不上。<br></p>
+          <p>2022.11.6更新<br>久违没有更新一些东西了，来说说刚刚遇到的一些坑：<br>①hexo仍不支持nodejs16版本，需要降级使用nodejs12；<br>②nodejs降级一开始使用的是nvm来切换版本，但安装程序并没有自动添加环境变量；<br>③手动添加环境变量后，通过nvm list和nvm install 12.14.0以及nvm use 12.14.0后，发现hexo g时还是报错；<br>④手动node -v后，发现nodejs版本仍为16，搜索后得知Windows下的nvm就是一坨屎，还是得老老实实通过msi安装旧版本；<br>⑤安装nodejs 12后，hexo g还是报错：error：spawn failed，删除目录下.deploy-git依然报错；<br>⑥登录GitHub看了一眼公钥，发现没了，遂通过上面的配置GitHub的步骤重新生成ssh-key；<br>⑦保存到GitHub后，再次hexo g -d，于是就能blog上看到这一堆东西了。<br>——————————————————————————————————————————————————————<br>在经历了千辛万苦后，终于我！！！！！重新启用了hexo！！！（此处应该有掌声）<br>一直挡在我面前的一个恶心的困难就是npm的依赖问题，导致我无法安装npm。<br>经过一上午的简短思考，发现问题出在node身上。<br>从镜像源所获取的nodejs并不是最新的版本，我用node -version看了一下，是8.1.0版本。<br>从ppa可获取的最新版本却是10.14.2,这就导致npm安装不上。<br></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2022/11/06/restart/#more" rel="contents">
