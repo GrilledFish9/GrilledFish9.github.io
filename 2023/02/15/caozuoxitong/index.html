@@ -87,16 +87,17 @@
 <meta property="og:site_name" content="技术宅拯救世界">
 <meta property="og:description" content="Chapter 1 操作系统概观1.批处理与多道程序设计 2.分时系统与实时系统 3.操作系统的基本类型与特征 4.并发与并行的概念 5.操作系统的层次结构与功能模块 6.程序的并发执行与顺序执行">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/os复习/进程五种基本状态及其转换.png">
-<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/os复习/处理器三级调度模型.png">
-<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/os复习/多级目录结构.png">
-<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/os复习/位示图.png">
-<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/成组链接法.png">
-<meta property="og:updated_time" content="2023-02-15T13:54:21.565Z">
+<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/jinchengdesanzhongzhuangtai.png">
+<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/jinchengdewuzhongjibenzhuangtaijizhuanhuan.png">
+<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/chuliqisanjidiaodumoxing.png">
+<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/duojimulujiegou.png">
+<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/weishitu.png">
+<meta property="og:image" content="http://yoursite.com/2023/02/15/caozuoxitong/chengzulianjiefa.png">
+<meta property="og:updated_time" content="2023-02-15T14:03:29.630Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统复习大纲">
 <meta name="twitter:description" content="Chapter 1 操作系统概观1.批处理与多道程序设计 2.分时系统与实时系统 3.操作系统的基本类型与特征 4.并发与并行的概念 5.操作系统的层次结构与功能模块 6.程序的并发执行与顺序执行">
-<meta name="twitter:image" content="http://yoursite.com/2023/02/15/caozuoxitong/os复习/进程五种基本状态及其转换.png">
+<meta name="twitter:image" content="http://yoursite.com/2023/02/15/caozuoxitong/jinchengdesanzhongzhuangtai.png">
 
 
 
@@ -429,7 +430,8 @@
 </code></pre><h3 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">进程 = 程序段 + 数据段 + PCB</span><br></pre></td></tr></table></figure>
 <h4 id="进程控制块"><a href="#进程控制块" class="headerlink" title="进程控制块"></a>进程控制块</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 进程描述信息</span><br><span class="line">2. 进程控制和管理信息</span><br><span class="line">3. 资源分配清单</span><br><span class="line">4. 处理机相关信息（上下文）</span><br></pre></td></tr></table></figure>
 <h4 id="进程的几种基本状态与状态转换"><a href="#进程的几种基本状态与状态转换" class="headerlink" title="进程的几种基本状态与状态转换"></a>进程的几种基本状态与状态转换</h4><p>进程申请了PCB但资源（如内存）不足时，并不是创建失败，而是处于创建态，等待资源分配。</p>
-<p><img src="/2023/02/15/caozuoxitong/os复习\进程五种基本状态及其转换.png" alt></p>
+<p><img src="/2023/02/15/caozuoxitong/jinchengdesanzhongzhuangtai.png" alt></p>
+<p><img src="/2023/02/15/caozuoxitong/jinchengdewuzhongjibenzhuangtaijizhuanhuan.png" alt></p>
 <h3 id="进程的同步与互斥"><a href="#进程的同步与互斥" class="headerlink" title="进程的同步与互斥"></a>进程的同步与互斥</h3><h4 id="临界资源"><a href="#临界资源" class="headerlink" title="临界资源"></a>临界资源</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 临界资源是同一时刻只允许一个进程访问的资源</span><br><span class="line">2. 没有临界资源机制导致程序失去再现性</span><br></pre></td></tr></table></figure>
 <h4 id="临界区"><a href="#临界区" class="headerlink" title="临界区"></a>临界区</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 临界区：进程中访问临界资源的代码段</span><br><span class="line">2. 进程互斥的访问临界区 = 互斥访问临界资源</span><br></pre></td></tr></table></figure>
 <h4 id="进程同步与互斥问题"><a href="#进程同步与互斥问题" class="headerlink" title="进程同步与互斥问题"></a>进程同步与互斥问题</h4><p>实现互斥的方法：</p>
@@ -452,7 +454,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 多对一（一旦一个用户线程被阻塞，其他线程也动不了。因为只有一个核心线程）</span><br><span class="line">2. 一对一</span><br><span class="line">3. 多对多（核心线程少于用户线程）</span><br></pre></td></tr></table></figure>
 <h4 id="调度的类型"><a href="#调度的类型" class="headerlink" title="调度的类型"></a>调度的类型</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 高级调度（作业调度）：外存-&gt;创建态-&gt;就绪态 内存与外存之间的调度</span><br><span class="line">2. 中级调度（内存调度）：运行态&lt;-&gt;挂起态（调入外存） 提高内存利用率和系统吞吐量</span><br><span class="line">3. 低级调度（进程调度）：就绪态-&gt;运行态</span><br></pre></td></tr></table></figure>
 <h4 id="调度队列模型"><a href="#调度队列模型" class="headerlink" title="调度队列模型"></a>调度队列模型</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 作业调度为进程活动做准备，进程调度使进程正常活动起来</span><br><span class="line">2. 中级调度将暂时不能运行的进程挂起</span><br><span class="line">3. 作业调度次数最少，中级调度次数略多，进程调度最频繁</span><br><span class="line">4. 进程调度（低级调度）是最基本的，不能或缺</span><br></pre></td></tr></table></figure>
-<p><img src="/2023/02/15/caozuoxitong/os复习\处理器三级调度模型.png" alt></p>
+<p><img src="/2023/02/15/caozuoxitong/chuliqisanjidiaodumoxing.png" alt></p>
 <h4 id="调度方式"><a href="#调度方式" class="headerlink" title="调度方式"></a>调度方式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">剥夺式调度（抢占式）：当进程正在处理器上运行时，系统可根据所规定的原则剥夺分配给此进程的处理器，并将其移入就绪队列，选择其他进程运行。</span><br><span class="line"></span><br><span class="line">非剥夺式调度（非抢占式）：一旦某个进程开始运行后便不再让出处理器，除非此进程运行结束，或主动放弃处理器，或因发生某个事件而不能继续执行。</span><br></pre></td></tr></table></figure>
 <h4 id="调度的目标"><a href="#调度的目标" class="headerlink" title="调度的目标"></a>调度的目标</h4><p>$$<br>CPU利用率 = \frac{CPU有效工作时间}{CPU有效工作时间 + CPU空闲等待时间}<br>$$</p>
 <p>$$<br>周转时间 = 作业完成时间 - 作业提交时间<br>$$</p>
@@ -870,10 +872,10 @@
 </tbody>
 </table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">优点：</span><br><span class="line">	1. 提高检索目录的速度</span><br><span class="line">	2. 在不同的目录中允许重名文件存在</span><br><span class="line">	3. 不同的用户可以使用不同的文件名访问系统中的同一个文件</span><br><span class="line">缺点：在需要多用户合作时，不同的用户可以使用不同的文件名访问系统中的同一个文件，不利于共享文件</span><br></pre></td></tr></table></figure>
-<h4 id="多级目录"><a href="#多级目录" class="headerlink" title="多级目录"></a>多级目录</h4><p><img src="/2023/02/15/caozuoxitong/os复习\多级目录结构.png" alt></p>
-<h3 id="文件存储空间的管理技术"><a href="#文件存储空间的管理技术" class="headerlink" title="文件存储空间的管理技术"></a>文件存储空间的管理技术</h3><h4 id="位示图"><a href="#位示图" class="headerlink" title="位示图"></a>位示图</h4><p><img src="/2023/02/15/caozuoxitong/os复习\位示图.png" alt></p>
+<h4 id="多级目录"><a href="#多级目录" class="headerlink" title="多级目录"></a>多级目录</h4><p><img src="/2023/02/15/caozuoxitong/duojimulujiegou.png" alt></p>
+<h3 id="文件存储空间的管理技术"><a href="#文件存储空间的管理技术" class="headerlink" title="文件存储空间的管理技术"></a>文件存储空间的管理技术</h3><h4 id="位示图"><a href="#位示图" class="headerlink" title="位示图"></a>位示图</h4><p><img src="/2023/02/15/caozuoxitong/weishitu.png" alt></p>
 <h4 id="空闲链表"><a href="#空闲链表" class="headerlink" title="空闲链表"></a>空闲链表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 空闲表</span><br><span class="line">2. 空闲链表</span><br></pre></td></tr></table></figure>
-<h4 id="索引（成组链接法）"><a href="#索引（成组链接法）" class="headerlink" title="索引（成组链接法）"></a>索引（成组链接法）</h4><p><img src="/2023/02/15/caozuoxitong/成组链接法.png" alt></p>
+<h4 id="索引（成组链接法）"><a href="#索引（成组链接法）" class="headerlink" title="索引（成组链接法）"></a>索引（成组链接法）</h4><p><img src="/2023/02/15/caozuoxitong/chengzulianjiefa.png" alt></p>
 
       
     </div>
