@@ -585,7 +585,7 @@
 
       
         
-          <p>2022.11.6更新<br>久违没有更新一些东西了，来说说刚刚遇到的一些坑：<br>①hexo仍不支持nodejs16版本，需要降级使用nodejs12；<br>②nodejs降级一开始使用的是nvm来切换版本，但安装程序并没有自动添加环境变量；<br>③手动添加环境变量后，通过nvm list和nvm install 12.14.0以及nvm use 12.14.0后，发现hexo g时还是报错；<br>④手动node -v后，发现nodejs版本仍为16，搜索后得知Windows下的nvm就是一坨屎，还是得老老实实通过msi安装旧版本；<br>⑤安装nodejs 12后，hexo g还是报错：error：spawn failed，删除目录下.deploy-git依然报错；<br>⑥登录GitHub看了一眼公钥，发现没了，遂通过上面的配置GitHub的步骤重新生成ssh-key；<br>⑦保存到GitHub后，再次hexo g -d，于是就能blog上看到这一堆东西了。<br>——————————————————————————————————————————————————————<br>在经历了千辛万苦后，终于我！！！！！重新启用了hexo！！！（此处应该有掌声）<br>一直挡在我面前的一个恶心的困难就是npm的依赖问题，导致我无法安装npm。<br>经过一上午的简短思考，发现问题出在node身上。<br>从镜像源所获取的nodejs并不是最新的版本，我用node -version看了一下，是8.1.0版本。<br>从ppa可获取的最新版本却是10.14.2,这就导致npm安装不上。<br></p>
+          <p>2024.8.9更新<br>把全是广告的LiveRE给干掉了，换成了小清新的Valine。<br>①打开Next主题的config.yml，找到之前的LiveRE配置文件，livere_uid改为false；<br><img src="/2022/11/06/restart/2.png" alt><br>②去LeanCloud注册一个账号并登录：<a href="https://console.leancloud.cn/apps；" target="_blank" rel="noopener">https://console.leancloud.cn/apps；</a><br>③完成实名认证后转到应用，创建一个应用，选择”开发版“；<br><img src="/2022/11/06/restart/3.png" alt><br>④设置-应用凭证，找到AppID和AppKey，复制好；<br><img src="/2022/11/06/restart/4.png" alt><br>⑤回到config.yml，找到Valine的配置处，填写刚刚复制的AppID和AppKey，其他的按照图里这么填就行，无所谓；<br><img src="/2022/11/06/restart/5.png" alt><br>⑥设置-安全中心-Web安全域名，填你的blog域名，我为了不踩坑CNAME和没有CNAME的都填上了；<br><img src="/2022/11/06/restart/6.png" alt><br>⑦bash里hexo g -d，于是就能blog上看到崭新的评论区了。<br><img src="/2022/11/06/restart/7.png" alt><br></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2022/11/06/restart/#more" rel="contents">
